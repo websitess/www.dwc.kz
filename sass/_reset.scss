@@ -1,0 +1,687 @@
+@font-face {
+    font-family: 'Playfair DisplayB';
+    src: url('../fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Playfair DisplayBLI';
+    src: url('../fonts/PlayfairDisplay-BlackItalic.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplay-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Playfair DisplayBL';
+    src: url('../fonts/PlayfairDisplay-Black.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplay-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Playfair DisplayR';
+    src: url('../fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Playfair DisplayBI';
+    src: url('../fonts/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplay-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Playfair DisplayI';
+    src: url('../fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplay-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+	font-family: 'Open SansSBI';
+	src: url('../fonts/OpenSans-SemiBoldItalic.eot');
+	src: local('../fonts/Open Sans SemiBold Italic'), local('OpenSans-SemiBoldItalic'),
+		url('../fonts/OpenSans-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/OpenSans-SemiBoldItalic.woff') format('woff'),
+		url('../fonts/OpenSans-SemiBoldItalic.ttf') format('truetype');
+	font-weight: 600;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Open SansLI';
+	src: url('../fonts/OpenSans-LightItalic.eot');
+	src: local('../fonts/Open Sans Light Italic'), local('OpenSans-LightItalic'),
+		url('../fonts/OpenSans-LightItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/OpenSans-LightItalic.woff') format('woff'),
+		url('../fonts/OpenSans-LightItalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Open SansB';
+	src: url('../fonts/OpenSans-Bold.eot');
+	src: local('../fonts/Open Sans Bold'), local('OpenSans-Bold'),
+		url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/OpenSans-Bold.woff') format('woff'),
+		url('../fonts/OpenSans-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Open SansEBI';
+	src: url('../fonts/OpenSans-ExtraBoldItalic.eot');
+	src: local('../fonts/Open Sans ExtraBold Italic'), local('OpenSans-ExtraBoldItalic'),
+		url('../fonts/OpenSans-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/OpenSans-ExtraBoldItalic.woff') format('woff'),
+		url('../fonts/OpenSans-ExtraBoldItalic.ttf') format('truetype');
+	font-weight: 800;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Open SansL';
+	src: url('../fonts/OpenSans-Light.eot');
+	src: local('../fonts/Open Sans Light'), local('OpenSans-Light'),
+		url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/OpenSans-Light.woff') format('woff'),
+		url('../fonts/OpenSans-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Open SansI';
+	src: url('OpenSans-Italic.eot');
+	src: local('Open Sans Italic'), local('OpenSans-Italic'),
+		url('OpenSans-Italic.eot?#iefix') format('embedded-opentype'),
+		url('OpenSans-Italic.woff') format('woff'),
+		url('OpenSans-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Open SansR';
+	src: url('../fonts/OpenSans-Regular.eot');
+	src: local('../fonts/Open Sans Regular'), local('OpenSans-Regular'),
+		url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/OpenSans-Regular.woff') format('woff'),
+		url('../fonts/OpenSans-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Open SansSB';
+	src: url('../fonts/OpenSans-SemiBold.eot');
+	src: local('../fonts/Open Sans SemiBold'), local('OpenSans-SemiBold'),
+		url('../fonts/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/OpenSans-SemiBold.woff') format('woff'),
+		url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Open SansEB';
+	src: url('../fonts/OpenSans-ExtraBold.eot');
+	src: local('../fonts/Open Sans ExtraBold'), local('OpenSans-ExtraBold'),
+		url('../fonts/OpenSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/OpenSans-ExtraBold.woff') format('woff'),
+		url('../fonts/OpenSans-ExtraBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Open SansBI';
+	src: url('../fonts/OpenSans-BoldItalic.eot');
+	src: local('../fonts/Open Sans Bold Italic'), local('OpenSans-BoldItalic'),
+		url('../fonts/OpenSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/OpenSans-BoldItalic.woff') format('woff'),
+		url('../fonts/OpenSans-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@import "variables";
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    -ms-box-sizing: inherit;
+    -o-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+header *,
+footer *,
+section * {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+input, button, textarea {
+    border-radius: 0px;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    color: #414141;
+    font-family: $Oregular;
+    padding-top: 108px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $Pregular;
+    font-weight: normal;
+}
+
+@mixin ul-default {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+} 
+
+@mixin flex {
+    display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+}
+@mixin contain {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+}
+@mixin cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+@mixin transform($transform) {
+    transform: $transform;
+    -webkit-transform: $transform;
+    -moz-transform: $transform;
+	-ms-transform: $transform;
+    -o-transform: $transform;	
+}
+@mixin justifybtn{
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+	-ms-justify-content: space-between;
+    -o-justify-content: space-between;	
+}
+@mixin justifycenter{
+    justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+	-ms-justify-content: center;
+    -o-justify-content: center;	
+}
+@mixin justifyflex-end{
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+	-ms-justify-content: flex-end;
+    -o-justify-content: flex-end;	
+}
+@mixin transition($transition){
+	-webkit-transition: $transition;
+	-moz-transition: $transition;
+	-ms-transition: $transition;
+	-o-transition: $transition;
+	transition: $transition;
+}
+a{
+    color: #333333;
+    text-decoration: none;
+    line-height: normal;
+    @include transition(300ms);
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.col--phone{
+    position: relative;
+    padding: 0 15px 0 28px;
+    &:before{
+        content: "\f095";
+        font-family: 'FontAwesome';
+        color: #7cc7e5;
+        position: absolute;
+        left: 0;
+        top: 4px;
+    } 
+    a{
+        pointer-events: none;
+    }
+    .more--btn{
+        position: absolute;
+        right: 0;
+        top: 0;
+        pointer-events: auto;
+        &:after{
+            content: "\f107";
+            font-family: 'FontAwesome';
+        }
+        &.open{
+            @include transform(rotate(180deg));
+        }
+    }
+}
+.col--email{
+    position: relative;
+    padding: 0 0 0 28px;
+    &:before{
+        content: "\f0e0";
+        font-family: 'FontAwesome';
+        color: #7cc7e5;
+        position: absolute;
+        left: 0;
+        top: 4px;
+    } 
+    &:hover{
+        color: #7cc7e5;
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0px;
+        left: 28px;
+        border-bottom: 2px solid #7da1c2;
+    }
+}
+
+.btn{
+    background-color: #27629a;
+    line-height: 1;
+    display: table;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-family: $OboldSB;
+    text-transform: uppercase;
+    cursor: pointer;
+    @include transition(300ms);
+    appearance: none;
+    -webkit-appearance: none;
+    &:hover{
+        background-color: #7cc7e5;
+    }
+}
+
+.col--address{
+    position: relative;
+    padding: 0 0 0 28px;
+    &:before{
+        content: "\f041";
+        font-family: 'FontAwesome';
+        color: #7cc7e5;
+        position: absolute;
+        left: 0;
+        top: 4px;
+    } 
+}
+
+.social{
+    @include flex;
+    li{
+        a{
+            color: #fff;
+            font-family: 'FontAwesome';
+            &:hover{
+                color: #7cc7e5;
+            }
+        }
+        &:nth-of-type(1){
+            a{
+                &:after{
+                    content: "\f16d";
+                }
+            }
+        }
+        &:nth-of-type(2){
+            a{
+                &:after{
+                    content: "\f09a";
+                }
+            }
+        }
+    }
+}
+
+h1{
+    font-size: 38px;
+}
+h2{
+    font-size: 34px;
+    text-align: center;
+    margin: 0 0 35px 0;
+    line-height: 1;
+}
+
+.title-block{
+    position: relative;
+    line-height: 1;
+    padding-bottom: 20px;
+    width: 100%;
+    margin-bottom: 35px;
+    &:after{
+        content: '';
+        position: absolute;
+        background: linear-gradient(to left, transparent 24%, #87cce7);
+        background: -webkit-linear-gradient(to left, transparent 24%, #87cce7);
+        background: -moz-linear-gradient(to left, transparent 24%, #87cce7);
+        background: -ms-linear-gradient(to left, transparent 24%, #87cce7);
+        bottom: 0;
+        height: 1px;
+        right: 0;
+        left: 0;
+        width: 500px;
+    }
+}
+.title-block-2{
+    position: relative;
+    line-height: 1;
+    padding-bottom: 20px;
+    &:after{
+        content: '';
+        position: absolute;
+        background: linear-gradient(90deg, transparent 10%, #87cce7, transparent);
+        background: -moz-linear-gradient(90deg, transparent 10%, #87cce7, transparent);
+        background: -ms-linear-gradient(90deg, transparent 10%, #87cce7, transparent);
+        bottom: 0;
+        height: 1px;
+        right: 0;
+        left: 0;
+        width: 500px;
+        margin: 0 auto;
+    }
+}
+
+.request{
+    @include flex;
+    flex-wrap: wrap;
+    margin: -15px -15px;
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    .select{
+        height: 50px;
+        border: 1px solid #afdbee;
+        background-color: #fff;
+        font-family: $Oregular;
+        font-size: 18px;
+        padding: 0 20px;
+        width: calc(25% - 30px);
+        width: -webkit-calc(25% - 30px);
+        width: -moz-calc(25% - 30px);
+        width: -ms-calc(25% - 30px);
+        margin: 20px 15px;
+        appearance: none;
+        -webkit-appearance: none;
+        &::placeholder{
+            color: #a0a0a0;
+        }
+    }
+    // input[type="date"]:before{
+    //     content: attr(placeholder) !important;
+    //     color: #a0a0a0;
+    // }      
+    textarea{
+        width: 69%;
+        border: 1px solid #afdbee;
+        background-color: #fff;
+        padding: 20px 20px 0 20px;
+        height: 145px;
+        resize: none;
+        margin: 0 30px 0 15px;
+        font-size: 18px;
+        font-family: $Oregular;
+        &::placeholder{
+            color: #a0a0a0;
+        }
+    }
+    .btn{
+        padding: 15px 60px;
+        margin-top: 20px;
+    }
+    .select{
+        padding: 0;
+        position: relative;
+        select{
+            width: 100%;
+            border: none;
+            height: 100%;
+            font-size: 18px;
+            font-family: $Oregular;
+            font-weight: normal;
+            color: #a0a0a0;
+            appearance: none;
+            -webkit-appearance: none;
+            padding: 0 35px 0 20px;
+        }
+        &:after{
+            content: "\f107";
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            @include transform(translateY(-50%));
+            font-family: 'FontAwesome';
+            color: #27629a;
+            pointer-events: none;
+        }
+    }
+}
+
+.check-list li{
+    position: relative;
+    padding-left: 30px;
+    &:before{
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background: linear-gradient(to right, transparent 24%, #94d1ea);
+        background: -webkit-linear-gradient(to right, transparent 24%, #94d1ea);
+        background: -moz-linear-gradient(to right, transparent 24%, #94d1ea);
+        background: -ms-linear-gradient(to right, transparent 24%, #94d1ea);
+        left: 0;
+        top: 10px;
+    }
+}
+
+.pagination ul{
+    @include flex;
+    @include justifycenter;
+    li{
+        margin: 0 3px;
+        a{
+            background-color: #fff;
+            width: 25px;
+            @include flex;
+            height: 24px;
+            align-items: center;
+            padding: 5px;
+            @include justifycenter;
+            color: #27629a;
+            @include transition(300ms);
+            &:hover{
+                color: #fff;
+                background-color: #27629a;
+            }
+        }
+        &.active a{
+            color: #fff;
+            background-color: #27629a;
+        }
+    }
+}
+
+@media screen and (max-width: 1169px){
+    .container{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1100px){
+    body{
+        padding-top: 80px;
+    }
+    .request{
+        margin: 0;
+        .submition{
+            margin: 20px auto;
+        }
+        textarea{
+            width: 100%;
+            margin: 0 15px 0 15px;
+        }
+    }
+    h1{
+        font-size: 32px;
+    }
+    h2{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .title-block{
+        &:after{
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 991px){
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 28px;
+    }
+    .title-block{
+        margin-bottom: 15px;
+    }
+    .title-block-2{
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width: 800px){
+    h1{
+        font-size: 28px;
+    }
+    h2{
+        font-size: 26px;
+    }
+}
+@media screen and (max-width: 768px){
+    body{
+        font-size: 14px;
+    }
+    h1{
+        font-size: 24px;
+    }
+    h2{
+        font-size: 22px;
+    }
+    .col--phone{
+        a{
+            pointer-events: auto;
+        }
+    }
+    .request{
+        display: block;
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        textarea,
+        .select{
+            font-size: 16px;
+            width: 100%;
+            margin: 10px 0;
+        } 
+        .select{
+            select{
+                font-size: 16px;
+            }
+        } 
+    }
+    .btn{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    h1{
+        font-size: 22px;
+    }
+    h2{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 540px){
+    .title-block-2{
+        &:after{
+            width: 100%;
+        }
+    }
+    .btn{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 400px){
+    .title-block{
+        padding-bottom: 10px;
+    }
+    .request{
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        .select{
+            height: 35px;
+            margin: 5px 0;
+            font-size: 14px;
+        } 
+        .select{
+            select{
+                font-size: 14px;
+            }
+        }
+        textarea{
+            font-size: 14px;
+        }
+        .submition{
+            margin: 0;
+            .g-recaptcha{
+                @include transform(scale(0.8)!important);
+                transform-origin: 0;  
+            }
+        }
+        .btn{
+            margin-top: 10px;        
+        } 
+    }
+}
